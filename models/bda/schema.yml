@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: weekend_sales_jan_w1_2018
+    description: "Weekeend Car Sales For Week 1 Jan 2018"
+    columns:
+      - name: brand
+        description: "The product brand column"
+        tests:
+          - unique
+          - not_null
+  
+  - name: weekend_sales_jan_w2_2018
+    description: "Weekeend Car Sales For Week 2 Jan 2018"
+    columns:
+      - name: brand
+        description: "The product brand column"
+        tests:
+          - unique
+          - not_null
+  
+  - name: weekend_sales_jan_w3_2018
+    description: "Weekeend Car Sales For Week 3 Jan 2018"
+    columns:
+      - name: brand
+        description: "The product brand column"
+        tests:
+          - unique
+          - not_null
+  
+  - name: weekend_sales_jan_w4_2018
+    description: "Weekeend Car Sales For Week 4 Jan 2018"
+    columns:
+      - name: brand
+        description: "The product brand column"
+        tests:
+          - unique
+          - not_null
+        
+
+  - name: weekend_sales_jan_2018
+    description: "Weekeend Car Sales For Jan 2018"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - brand
+            - week
+
