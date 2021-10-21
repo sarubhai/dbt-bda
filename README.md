@@ -186,10 +186,6 @@ dbt-bda-snowflake-profile:
       query_tag: DBT-BDA
 ```
 
-dbname=BDA
-schemaname=CAR
-warehousename=BDA_WH
-
 ### DBT Commands:
 
 - dbt deps
